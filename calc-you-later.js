@@ -1,1 +1,20 @@
-const result = calculate(operation, num1, num2);
+
+
+
+calc = prompt('What do you want to calculate?')
+
+console.log(calc);
+
+
+let calcArr = calc.split(' ');
+const op = calcArr[0];
+const num1 = parseInt(calcArr[1]);
+const num2 = parseInt(calcArr[2])
+console.log(calcArr);
+
+if(calc !== null){
+const result = calculate(op, num1, num2);
+document.querySelector('h1').innerText = result;
+}
+
+
